@@ -4,8 +4,6 @@ from django.core.exceptions import PermissionDenied
 from django.utils.translation import ugettext_lazy as _
 from django.utils.safestring import mark_safe
 
-from cap.decorators import short_description
-
 from history.models import HistoryRecord, HistoryGroup
 
 
@@ -35,9 +33,10 @@ class HistoryRecordAdmin(admin.ModelAdmin):
 
     search_fields = ['text']
 
-    @short_description(_('Text'))
     def text_tag(self, obj):
         return mark_safe(obj.text)
+
+    text_tag.short_description = _('Text')
 
     def has_add_permission(self, request):
         return False

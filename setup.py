@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 
-version = '0.1'
+version = '1.0.0'
 url = 'https://github.com/pmaigutyak/mp-history'
 
 with open('requirements.txt') as f:
