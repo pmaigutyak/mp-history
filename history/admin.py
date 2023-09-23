@@ -1,7 +1,7 @@
 
 from django.contrib import admin
 from django.core.exceptions import PermissionDenied
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.utils.safestring import mark_safe
 
 from history.models import HistoryRecord, HistoryGroup

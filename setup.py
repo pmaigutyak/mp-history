@@ -2,11 +2,8 @@
 from setuptools import setup, find_packages
 
 
-version = '1.0.0'
+version = '1.1.0'
 url = 'https://github.com/pmaigutyak/mp-history'
-
-with open('requirements.txt') as f:
-    requires = f.read().splitlines()
 
 setup(
     name='django-mp-history',
@@ -19,5 +16,4 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     license='MIT',
-    install_requires=requires
 )
